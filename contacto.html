@@ -2,13 +2,50 @@
 
 <!DOCTYPE HTML>
 <html lang="es">
-    
-    <head>
 
+    <head>
+        <title>Primer pagina web: Contacto</title>
     </head>
 
     <body>
+ <!--Encabezado de titulo-->
+        <h1> Esta es mi primer pagina web</h1>
 
+        <!--Lista de links-->
+        <ul>                         <!-- Iniciar lista desordenara-->
+            <li>Inicio</li>          <!-- Link que nos lleva a Inicio-->
+            <li>Contenidos</li>      <!-- Link que nos lleva a Contenidos-->
+            <li>Contacto</li>        <!-- Link que nos lleva a Contacto-->
+        </ul>
+
+        <hr/>  <!-- Divisor de linea-->
+
+         <!--Encabezado de subtitulo-->
+        <h2>Contacto de usuario</h2>
+        <form>
+            <p>                      <!-- Campo para escribir nombre-->
+                <label for="nombre">Nombre: </label> <br/>
+                <input type="text" name="nombre" placeholder="Escribe tu nombre"/> 
+            </p>
+
+            <p>                      <!-- Campo para poner una descripcion-->
+                <label for="descripcion">Descripcion: </label> <br/>
+                <textarea name="descripcion" placeholder="Introduce una descripcion de ti"></textarea> 
+            </p>
+
+            <p>
+            <label for="select">Genero: </label> <br/>
+            <select name="select">   <!-- Campo para seleccionar entre las opciones-->
+                <option value="Femenino">Femenino</option> <br/>
+                <option value="Masculino">Masculino</option> <br/>
+                <option value="Sin definir">Sin definir</option> <br/>
+            </select>
+            </p>
+ 
+            <input type="submit" value="Enviar informacion">
+
+        </form>
+        
     </body>
 
 </html>
